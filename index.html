@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Practical AI for Course Design: Session Materials</title>
+<meta name="description" content="Downloads and setup steps for tools shared at FVTC Instructional Excellence Day 2026.">
+<style>
+:root{
+  --bg:#fbfaf7; --surface:#ffffff; --ink:#1d2430; --muted:#4a5363; --rule:#d9d6cf;
+  --accent:#0b5a8a; --accent-ink:#ffffff; --code:#f1efe9;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#14181e; --surface:#1c2129; --ink:#e8e6e1; --muted:#b4b9c2; --rule:#343b46;
+         --accent:#7cc2ee; --accent-ink:#0d1a24; --code:#262c35; }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:1.0625rem/1.65 Charter,"Bitstream Charter","Sitka Text",Cambria,Georgia,serif}
+main{max-width:44rem;margin:0 auto;padding:3rem 1.25rem 4rem}
+h1,h2,h3{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.25;letter-spacing:-0.01em}
+h1{font-size:2rem;margin:0 0 .5rem}
+h2{font-size:1.4rem;margin:2.75rem 0 .75rem;padding-top:1.5rem;border-top:1px solid var(--rule)}
+h3{font-size:1.1rem;margin:1.75rem 0 .5rem}
+.lede{color:var(--muted);margin:0 0 1rem}
+a{color:var(--accent);text-underline-offset:.15em}
+a:focus-visible,.button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.button{display:inline-block;background:var(--accent);color:var(--accent-ink);text-decoration:none;
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-weight:600;
+  padding:.7rem 1.2rem;border-radius:.4rem;margin:.5rem 0 1rem}
+.card{background:var(--surface);border:1px solid var(--rule);border-radius:.5rem;padding:1.25rem 1.5rem}
+ol li,ul li{margin:.35rem 0}
+.note{color:var(--muted);font-size:.95rem}
+code{background:var(--code);padding:.1em .35em;border-radius:.25em;font-size:.92em}
+footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <h1>Practical AI for Course Design</h1>
+  <p class="lede">Applied Activities, Quizzes, Study Tools, and Accessibility. Session materials from FVTC Instructional Excellence Day, November 4, 2026.</p>
+</header>
+
+<section aria-labelledby="qti">
+  <h2 id="qti">QTI Quiz Tool</h2>
+  <div class="card">
+    <p>A Claude skill that turns your own course sources into quiz and exam packages that import into Canvas Classic Quizzes and Blackboard Ultra question banks. Claude asks about your goals, drafts the questions for your review, and packages them only after you approve.</p>
+    <p>Each build gives you an importable .zip, an answer-key review sheet, a spec file for revising the quiz later, and a short list of things to check after import.</p>
+    <a class="button" href="https://github.com/DrMags/edu-tools/releases/latest/download/qti-quiz-tool.zip">Download qti-quiz-tool.zip</a>
+  </div>
+
+  <h3>Set it up in Claude</h3>
+  <ol>
+    <li>In Claude, make sure code execution and file creation is turned on.</li>
+    <li>Go to <strong>Customize &gt; Skills</strong>. Some versions label this Settings &gt; Capabilities.</li>
+    <li>Choose the option to upload a skill, and upload the .zip file as downloaded. Do not unzip it first.</li>
+    <li>Start a new chat and ask Claude to build a quiz. Have your objectives, readings, or notes ready to upload.</li>
+  </ol>
+  <p class="note">Skill availability depends on your Claude plan. On Enterprise plans, an administrator may need to turn skills on. Current details are in the Claude Help Center article <a href="https://support.claude.com/en/articles/12512180-using-skills-in-claude">Using skills in Claude</a>.</p>
+
+  <h3>What it can do</h3>
+  <ul>
+    <li>Works in any discipline, starting from the sources you provide.</li>
+    <li>Offers a wide range of Canvas question types, including formula questions with randomized values.</li>
+    <li>Checks alt text, answer-format instructions, and color contrast for accessibility.</li>
+    <li>Stops a build when a source appears to contain student names, IDs, or grades.</li>
+  </ul>
+  <p class="note">The skill is built for Claude and relies on scripts Claude runs while packaging, so it is not designed for other AI tools.</p>
+</section>
+
+<section aria-labelledby="help">
+  <h2 id="help">Questions and problems</h2>
+  <p>Problems with a tool can be reported on the <a href="https://github.com/DrMags/edu-tools/issues">repository's Issues page</a>. A free GitHub account is required to post.</p>
+</section>
+
+<section aria-labelledby="license">
+  <h2 id="license">License</h2>
+  <p>These materials are shared under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</a>. You may use, adapt, and share them, including adapted versions, as long as credit is given.</p>
+</section>
+
+<footer>
+  <p>AI-assisted. Reviewed and revised by me.</p>
+</footer>
+</main>
+</body>
+</html>

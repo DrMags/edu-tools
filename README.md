@@ -26,7 +26,7 @@ The tool works in any discipline. It supports formula questions with randomized 
 
 Skill availability depends on your Claude plan, and on Enterprise plans an administrator may need to turn skills on. See [Using skills in Claude](https://support.claude.com/en/articles/12512180-using-skills-in-claude) for current details.
 
-## QTI Quiz Tool for Microsoft 365 Copilot Chat (beta)
+## QTI Quiz Tool for Microsoft 365 Copilot Chat
 
 A version of the same tool for the Microsoft 365 Copilot Chat that comes with a college Microsoft account. It works with the free (Basic) Copilot Chat; no upgrade is needed. Copilot runs the same builder scripts, so the packages, review sheets, and spec files match the Claude version.
 
@@ -39,7 +39,7 @@ A version of the same tool for the Microsoft 365 Copilot Chat that comes with a 
 3. Paste the starter prompt from "2 - Starter prompt (paste this).txt" and send it.
 4. Copilot runs a self-check, then asks about your goals. Repeat these steps at the start of each new chat.
 
-This version is a beta: it has been tested in Copilot Chat but not yet confirmed by an import into Canvas. Copilot Chat uses OpenAI models, so review the questions and the review sheet carefully. Copilot Studio agents cannot run the builder scripts, so use a regular Copilot Chat.
+A package built in the free Copilot Chat has been imported into Canvas Classic Quizzes (Common Cartridge route) and confirmed. Copilot Chat uses OpenAI models, so review the questions and the review sheet carefully. Copilot Studio agents cannot run the builder scripts, so use a regular Copilot Chat.
 
 ## Questions and problems
 
